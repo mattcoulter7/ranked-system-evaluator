@@ -16,9 +16,8 @@ if __name__ == "__main__":
             ),
             elo_updater=EloUpdater()
         ),
-        game_simulator=GameSimulator(),
-
-        population_size=60000,
-        n_iterations=10
+        game_simulator=GameSimulator(128),
+        sample_size=12000,
+        epochs=20
     ).evaluate()
     pass
